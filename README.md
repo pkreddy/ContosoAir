@@ -1,5 +1,6 @@
 # This project is retired, archived, and no longer supported. You are welcome to continue to use and fork the repository.
 
+[![Build Status](https://pranaykatta.visualstudio.com/TestDevOPs/_apis/build/status/pkreddy.ContosoAir?branchName=master)](https://pranaykatta.visualstudio.com/TestDevOPs/_build/latest?definitionId=6&branchName=master)
 
 # Microsoft.Github CI Demo
 
