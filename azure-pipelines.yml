@@ -7,7 +7,6 @@ steps:
     inputs:
       command: 'custom'
       customcommand: 'install jest'
-      customcommand: 'install --production'
   - script: 'npm test'
     displayName: 'Run unit tests'
     continueOnError: true
