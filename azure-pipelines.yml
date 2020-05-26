@@ -4,7 +4,9 @@ trigger:
   - master
 steps:
   - task: Npm@1
-    script: 'npm install jest' 
+- task: Npm@1
+  inputs:
+    command: 'install'
     inputs:
       command: 'custom'
       customcommand: 'install --production' 
