@@ -11,6 +11,8 @@ steps:
       command: 'custom'
       customcommand: 'install --production' 
   - script: 'npm test'
+- task: UseNode@1
+  inputs:
     displayName: 'Run unit tests'
     continueOnError: true
   - task: PublishTestResults@2
