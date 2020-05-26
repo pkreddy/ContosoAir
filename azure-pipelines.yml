@@ -4,12 +4,9 @@ trigger:
   - master
 steps:
   - task: Npm@1
-- task: Npm@1
-  inputs:
-    command: 'install'
     inputs:
       command: 'custom'
-      customcommand: 'install --production' 
+      customcommand: 'install jest'
   - script: 'npm test'
     displayName: 'Run unit tests'
     continueOnError: true
