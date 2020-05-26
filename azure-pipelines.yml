@@ -3,14 +3,11 @@ pool:
 trigger:
   - master
 steps:
-  - task: Npm@0
-  - script: 'npm install'
-    displayName: 'Run installation'
-    continueOnError: true
   - task: Npm@1
+    script: 'npm install jest' 
     inputs:
       command: 'custom'
-      customcommand: 'install --production'
+      customcommand: 'install --production' 
   - script: 'npm test'
     displayName: 'Run unit tests'
     continueOnError: true
